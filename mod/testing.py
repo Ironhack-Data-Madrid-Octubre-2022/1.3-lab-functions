@@ -14,7 +14,8 @@ def test_greater(fn):
             self.output = output
 
         def runTest(self):
-            self.assertEqual(fn(*self.input), self.output, f"Should be {self.output}")
+            self.assertEqual(fn(*self.input), self.output, f'Should be {self.output}')
+            
     suite = unittest.TestSuite()
     for _ in range(100):
         a,b = random.randint(-1000,1000),random.randint(-1000,1000)
